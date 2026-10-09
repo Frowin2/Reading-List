@@ -1,0 +1,312 @@
+/* ==========================================
+   1. GRUNDEINSTELLUNGEN
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+    color: #111111;
+
+    font-family: 'Vollkorn', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+
+/* ==========================================
+   2. SEITENBREITE UND ZENTRIERUNG
+========================================== */
+
+.wrapper {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+
+/* ==========================================
+   3. HEADER
+========================================== */
+
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 51px;
+}
+
+
+/* ==========================================
+   4. NAME OBEN LINKS
+========================================== */
+
+.site-name {
+    color: #111111;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   5. NAVIGATION OBEN RECHTS
+========================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-header a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.nav-links a {
+    font-size: 17px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.site-header a:hover {
+    color: #777777;
+}
+
+
+/* ==========================================
+   6. HAUPTINHALT
+========================================== */
+
+main.wrapper {
+    padding-top: 27px;
+    padding-bottom: 80px;
+}
+
+
+/* ==========================================
+   7. BANNERBILD
+========================================== */
+
+.banner {
+    display: block;
+
+    width: 100%;
+    height: 175px;
+
+    object-fit: cover;
+    object-position: center 45%;
+
+    margin: 0 0 12px 0;
+}
+
+
+/* ==========================================
+   8. HAUPTÜBERSCHRIFT
+========================================== */
+
+h1 {
+    font-family: 'Vollkorn', Georgia, serif;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin: 0 0 16px 0;
+}
+
+
+/* ==========================================
+   9. EINLEITUNG
+========================================== */
+
+.introduction {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.35;
+
+    margin: 0 0 15px 0;
+}
+
+
+/* ==========================================
+   10. BLAUE LINKS
+========================================== */
+
+main a {
+    color: #1675ee;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   11. ANKLICKBARER KATEGORIENÜBERBLICK
+========================================== */
+
+.category-navigation {
+    margin: 15px 0 18px 0;
+}
+
+.category-navigation ul {
+    margin: 0;
+    padding-left: 27px;
+}
+
+.category-navigation li {
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+
+/* ==========================================
+   12. HINWEISTEXT
+========================================== */
+
+.reading-note {
+    font-size: 17px;
+    line-height: 1.35;
+
+    margin: 0 0 18px 0;
+}
+
+
+/* ==========================================
+   13. BUCHKATEGORIEN
+========================================== */
+
+section {
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Vollkorn', Georgia, serif;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    margin: 0 0 15px 0;
+}
+
+
+/* ==========================================
+   14. BÜCHERLISTEN
+========================================== */
+
+section ul {
+    margin: 0;
+    padding-left: 27px;
+}
+
+section li {
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+
+/* ==========================================
+   15. ABSÄTZE
+========================================== */
+
+p {
+    margin-top: 0;
+}
+
+
+/* ==========================================
+   16. SMARTPHONE-ANSICHT
+========================================== */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .site-header nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .site-name {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    main.wrapper {
+        padding-top: 25px;
+    }
+
+    .banner {
+        height: 160px;
+    }
+
+    h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .introduction,
+    .reading-note,
+    .category-navigation li,
+    section li {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+}
